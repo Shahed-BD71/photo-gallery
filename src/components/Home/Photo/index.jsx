@@ -13,12 +13,12 @@ export default function Photo() {
     const getPhotos = async () => {
       const config = {
         headers: {
-          Authorization: '563492ad6f91700001000001c75fb5d7faf1469cb10002b24e623cb7',
+          Authorization: import.meta.env.VITE_API_KEY,
         },
       };
       try {
         const response = await axios.get(
-          `https://api.pexels.com/v1/search?query=${query}`,
+          `${import.meta.env.VITE_BASE_URL}query=${query}`,
           config
         );
         console.log(response.data.photos);
