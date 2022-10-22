@@ -1,5 +1,5 @@
 import React from 'react'
-import UserLocation from './Location/UserLocation'
+import UserLocation from './location/UserLocation'
 import Photo from './Photo'
 
 export default function Home() {
