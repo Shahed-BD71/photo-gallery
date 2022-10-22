@@ -10,6 +10,7 @@ export default function PhotoCard() {
     let allImages = state.images.images;
     return allImages
   });
+  
   const theme = createTheme();
   const matchDownMd = useMediaQuery(theme.breakpoints.down('sm'));
   return (

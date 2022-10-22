@@ -38,7 +38,9 @@ export default function Login ({ authGuard }) {
     email: Yup.string()
       .email("Provide a valid email address")
       .required("Email is required"),
-    password: Yup.string().required("Password is required"),
+    password: Yup.string()
+      .required("Password is required")
+      .min(6, "Too Short! At least 6 Character")
   });
 
   const formik = useFormik({
