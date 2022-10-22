@@ -5,7 +5,6 @@ import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignupPage";
 function App() {
-  const baseURL = import.meta.env.VITE_BASE_URL;
   const [auth, setAuth] = useState(false);
   const location = useLocation();
 
