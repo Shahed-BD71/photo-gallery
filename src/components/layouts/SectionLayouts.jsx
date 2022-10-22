@@ -1,8 +1,7 @@
 import styled from "@emotion/styled";
 import { Box, Container, Typography } from "@mui/material";
 import React, { Fragment } from "react";
-
-// import Logo from "../components/Logo";
+import Logo from "../../assets/logo.png.png";
 
 const RootStyle = styled("div")({
   background: "rgb(249, 250, 251)",
@@ -32,9 +31,9 @@ export default function SectionLayouts({ children }) {
         <Container maxWidth="sm">
           <ContentStyle>
             <HeadingStyle>
-              Logo
+              <img src={Logo} alt='logo'/>
               <Typography sx={{ color: "text.secondary", mb: 5 }}>
-                Enter your details below.
+                  Login Here
               </Typography>
             </HeadingStyle>
             {children}
